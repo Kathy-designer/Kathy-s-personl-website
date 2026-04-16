@@ -409,9 +409,13 @@ export default function App() {
               Know about Kathy
             </motion.h1>
           </div>
-          <p className="text-black/40 text-xs uppercase tracking-[0.8em] mb-12 font-medium">
+          <p className="text-black/40 text-xs uppercase tracking-[0.8em] mb-6 font-medium">
             AN INDEFINABLE SOUL
           </p>
+          <div className="mb-12">
+            <p className="text-[12px] uppercase tracking-[0.3em] text-black/30 mb-2 font-bold">Educational Background</p>
+            <p className="text-lg text-black/60 font-serif italic">Graduated from GDUFS, majored in English & Education, TEM8</p>
+          </div>
           <motion.div 
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 2 }}
@@ -425,7 +429,11 @@ export default function App() {
       </Section>
 
       {/* Work Section (Folders) */}
-      <Section id="work">
+      <Section id="work" className="justify-start pt-32 md:pt-48">
+        <div className="text-center mb-32 md:mb-48">
+          <h2 className="text-5xl font-serif italic tracking-tight mb-4">Work Experience</h2>
+          <p className="text-black/30 text-[10px] uppercase tracking-[0.5em] font-medium">My Professional Journey</p>
+        </div>
         <div className="relative w-full max-w-4xl aspect-square md:aspect-video flex items-center justify-center">
           {/* Central Photo */}
           <motion.div 
@@ -513,8 +521,8 @@ export default function App() {
       </Section>
 
       {/* Podcast Section */}
-      <Section id="podcasts">
-        <div className="text-center mb-20">
+      <Section id="podcasts" className="justify-start pt-32 md:pt-48">
+        <div className="text-center mb-32 md:mb-40">
           <h2 className="text-5xl font-serif italic tracking-tight mb-4">Podcast Library</h2>
           <p className="text-black/30 text-[10px] uppercase tracking-[0.5em] font-medium">Insights from the AI Frontier</p>
         </div>
@@ -543,8 +551,8 @@ export default function App() {
       </Section>
 
       {/* YouTube Section */}
-      <Section id="youtube" className="overflow-hidden">
-        <div className="text-center mb-20">
+      <Section id="youtube" className="overflow-hidden justify-start pt-32 md:pt-48">
+        <div className="text-center mb-32 md:mb-40">
           <h2 className="text-5xl font-serif italic tracking-tight mb-4">YouTube Inspiration</h2>
           <p className="text-black/30 text-[10px] uppercase tracking-[0.5em] font-medium">Creators I Follow</p>
         </div>
@@ -630,8 +638,8 @@ export default function App() {
       </Section>
 
       {/* Interests Section - 3D Gallery */}
-      <Section id="interests">
-        <div className="text-center mb-10">
+      <Section id="interests" className="justify-start pt-32 md:pt-48">
+        <div className="text-center mb-16 md:mb-24">
           <h2 className="text-5xl font-serif italic tracking-tight mb-4">Life & Interests</h2>
           <p className="text-black/30 text-[10px] uppercase tracking-[0.5em] font-medium">Beyond the Screen</p>
         </div>
@@ -659,7 +667,7 @@ export default function App() {
               >
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white">
-                    <span className="font-bold text-xs">小</span>
+                    <span className="font-bold text-xs">薯</span>
                   </div>
                   <div>
                     <h3 className="text-lg font-medium">Xiaohongshu</h3>
@@ -677,7 +685,7 @@ export default function App() {
               >
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white">
-                    <span className="font-bold text-xs">观</span>
+                    <span className="font-bold text-xs">猹</span>
                   </div>
                   <div>
                     <h3 className="text-lg font-medium">Watcha (观猹)</h3>
